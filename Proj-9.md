@@ -122,9 +122,14 @@ In our case we want to copy all files and directories – so we use **.
 If you want to apply some particular pattern to define which files to send – use this syntax.
  
  
+ ![image](https://user-images.githubusercontent.com/67065306/136287376-31aa039b-389d-40a6-b045-8d0ecf8cc8cb.png)
 
+Save this configuration and go ahead, change something in README.MD file in your GitHub Tooling repository.
+
+Webhook will trigger a new job and in the "Console Output" of the job you will find something like this:
  
- 
+ ![image](https://user-images.githubusercontent.com/67065306/136287673-6465dece-97af-4bd4-b62f-20d91a62624d.png)
+
  
  
  
