@@ -55,9 +55,10 @@ In this part, we will configure a simple Jenkins job/project (these two terms ca
 This job will will be triggered by GitHub webhooks and will execute a ‘build’ task to retrieve codes from GitHub and store it locally on Jenkins server.
 
 Enable webhooks in your GitHub repository settings
+
  
- 
- 
+ ![image](https://user-images.githubusercontent.com/67065306/136272944-44eb794b-6a92-4b41-8852-c51bcce99679.png)
+
  
  
  
