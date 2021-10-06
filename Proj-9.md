@@ -86,9 +86,43 @@ Step 3 – Configure Jenkins to copy files to NFS server via SSH
 Jenkins is a highly extendable application and there are 1400+ plugins available. 
  
 We will need a plugin that is called "Publish Over SSH".
+
+1. Install "Publish Over SSH" plugin.
+ 
+   On main dashboard select "Manage Jenkins" and choose "Manage Plugins" menu item.
+
+   On "Available" tab search for "Publish Over SSH" plugin and install it
+ 
+![image](https://user-images.githubusercontent.com/67065306/136279359-8ce48ae9-9338-457f-beb7-0d1e50be0fc3.png)
+ 
+![image](https://user-images.githubusercontent.com/67065306/136279215-67fc2b1a-be8a-45b8-a2df-c76661f14529.png)
+
+2. Configure the job/project to copy artifacts over to NFS server.
+
+   On main dashboard select "Manage Jenkins" and choose "Configure System" menu item.
+
+   Scroll down to Publish over SSH plugin configuration section and configure it to be able to connect to your NFS server:
+
+    1. Provide a private key (content of .pem file that you use to connect to NFS server via SSH/Putty)
+    
+    2. Arbitrary name
+    
+    3. Hostname – can be private IP address of your NFS server
+    
+    4. Username – ec2-user (since NFS server is based on EC2 with RHEL 8)
+    
+    5. Remote directory – /mnt/apps since our Web Servers use it as a mointing point to retrieve files from the NFS server
+ 
+ ![image](https://user-images.githubusercontent.com/67065306/136284559-e8823eaf-33d1-4da6-8a22-b4ebfe27301d.png)
+
+ ![image](https://user-images.githubusercontent.com/67065306/136286209-b1a081fa-70f3-428f-a674-ff81d848871a.png)
+
+Configure it to send all files probuced by the build into our previouslys define remote directory. 
+In our case we want to copy all files and directories – so we use **.
+If you want to apply some particular pattern to define which files to send – use this syntax.
  
  
- 
+
  
  
  
