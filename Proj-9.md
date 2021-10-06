@@ -59,6 +59,11 @@ Enable webhooks in your GitHub repository settings
  
  ![image](https://user-images.githubusercontent.com/67065306/136272944-44eb794b-6a92-4b41-8852-c51bcce99679.png)
 
+ ![image](https://user-images.githubusercontent.com/67065306/136274892-90fce32a-1330-4053-b5f4-463fe7f08395.png)
+
+ ![image](https://user-images.githubusercontent.com/67065306/136274956-02de72f1-de52-4b46-a191-2d750a9bf74b.png)
+
+ 
  
  
  
