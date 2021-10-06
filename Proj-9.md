@@ -63,7 +63,11 @@ Enable webhooks in your GitHub repository settings
 
  ![image](https://user-images.githubusercontent.com/67065306/136274956-02de72f1-de52-4b46-a191-2d750a9bf74b.png)
 
- 
- 
+ Now, we will go ahead and make some change in any file in your GitHub repository (e.g. README.MD file) and push
+ the changes to the master branch. We will see that a new build has been launched automatically (by webhook) and 
+ we can see its results – artifacts, saved on Jenkins server as below.
+
+ ![image](https://user-images.githubusercontent.com/67065306/136277364-a1a58f2a-8045-49d3-b887-fac23ae8f373.png)
+
  
  
