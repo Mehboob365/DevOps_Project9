@@ -69,5 +69,12 @@ Enable webhooks in your GitHub repository settings
 
  ![image](https://user-images.githubusercontent.com/67065306/136277364-a1a58f2a-8045-49d3-b887-fac23ae8f373.png)
 
+We have now configured an automated Jenkins job that receives files from GitHub by webhook trigger (this method is 
+considered as ‘push’ because the changes are being ‘pushed’ and files transfer is initiated by GitHub). 
+There are also other methods: trigger one job (downstreadm) from another (upstream), poll GitHub periodically and others.
+
+By default, the artifacts are stored on Jenkins server locally
+
+ls /var/lib/jenkins/jobs/tooling_github/builds/<build_number>/archive/
  
- 
+Now, Let’s Configure Jenkins to copy files to NFS server via SSH
